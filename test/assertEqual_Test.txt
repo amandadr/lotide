@@ -1,0 +1,2 @@
+assertEqual("Bootcamp", "Bootcmamp");
+assertEqual(1, 1);

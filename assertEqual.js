@@ -7,6 +7,3 @@ function assertEqual(actual, expected) {
     console.log('❌❌❌Assertion Failed: ' + failed);
   }
 }
-
-assertEqual("Bootcamp", "Bootcmamp");
-assertEqual(1, 1);
