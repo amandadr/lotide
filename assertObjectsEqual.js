@@ -40,10 +40,10 @@ const eqObjects = function(obj1, obj2) {
           result = true;
         }
       }
+    }
   }
-}
   return result;
-}
+};
 const assertObjectsEqual = function(actual, expected) {
   //to fix output:
   const inspect = require('util').inspect;
@@ -55,4 +55,4 @@ const assertObjectsEqual = function(actual, expected) {
   } else {
     return '❌❌❌Assertion Failed: ' + failed;
   }
-}
+};

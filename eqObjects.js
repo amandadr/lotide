@@ -49,7 +49,7 @@ const eqObjects = function(obj1, obj2) {
           result = true;
         }
       }
+    }
   }
-}
   return result;
-}
+};
