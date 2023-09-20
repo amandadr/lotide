@@ -1,0 +1,3 @@
+console.log(countLetters('hello'))
+console.log(countLetters('hooray'))
+console.log(countLetters('countertop'))

@@ -1,0 +1,3 @@
+console.log(letterPositions('hello'))
+console.log(letterPositions('hellohello'))
+console.log(letterPositions('yesssssssy'))

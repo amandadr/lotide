@@ -6,8 +6,8 @@ function assertEqual(actual, expected) {
   } else {
     console.log('❌❌❌Assertion Failed: ' + failed);
   }
-}; 
+}
 
 function head(arr) {
   return arr[0];
-};
+}

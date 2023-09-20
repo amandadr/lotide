@@ -6,7 +6,7 @@ function assertEqual(actual, expected) {
   } else {
     console.log('❌❌❌Assertion Failed: ' + failed);
   }
-} 
+}
 function eqArrays(a, b) {
   let result;
   //first indictaor should be length:
@@ -14,7 +14,7 @@ function eqArrays(a, b) {
     result = false;
     return result;
   }
-  //iterate over the contents of each a and b, pushing each element into corresponding 
+  //iterate over the contents of each a and b, pushing each element into corresponding
   for (let i = 0; i < a.length; i++) {
     if (a[i] !== b[i]) {
       result = false;
