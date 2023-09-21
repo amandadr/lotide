@@ -1,0 +1,3 @@
+const words = ['hat', 'cat', 'sat', 'pat', 'bat'];
+const results1 = map(words, word => word.length);
+console.log(results1);
