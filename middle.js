@@ -1,23 +1,4 @@
-function eqArrays(a, b) {
-  let result;
-  //first indictaor should be length:
-  if (a.length != b.length) {
-    result = false;
-    return result;
-  }
-  //iterate over the contents of each a and b, pushing each element into corresponding
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] !== b[i]) {
-      result = false;
-    } else {
-      result = true;
-    }
-  }
-  return result;
-}
-function isOdd(num) {
-  return num % 2 > 0;
-}
+const isOdd = require('./isOdd');
 const middle = function(arr) {
 //create result array
   let result = [];
@@ -42,3 +23,4 @@ const middle = function(arr) {
     return result;
   }
 };
+module.exports = middle;

@@ -1,18 +1,4 @@
-function eqArrays(a, b) {
-  //first indictaor should be length:
-  if (a.length != b.length) {
-    let result = false;
-  }
-  //iterate over the contents of each a and b, pushing each element into corresponding
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] !== b[i]) {
-      result = false;
-    } else {
-      result = true;
-    }
-  }
-  return result;
-}
+const eqArrays = require('./eqArrays');
 function assertArraysEqual(arr1, arr2) {
   const passed = arr1 + ' === ' + arr2;
   const failed = arr1 + ' !== ' + arr2;
@@ -22,3 +8,4 @@ function assertArraysEqual(arr1, arr2) {
     return '❌❌❌Assertion Failed: ' + failed;
   }
 }
+module.exports = assertArraysEqual;
