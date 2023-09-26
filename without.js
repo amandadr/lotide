@@ -9,10 +9,7 @@ const without = function(source, itemsToRemove) {
   }
   //for each item of itemsToRemove, if the indexOf() = the item, remove(splice()) that element
   for (const item of itemsToRemove) {
-    let element = result.indexOf(item);
-    if (element > -1) {
-      result.splice(element, 1);
-    }
+    result = result.filter(value => value !== item);
   }
   return result;
 };

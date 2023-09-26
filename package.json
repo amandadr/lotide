@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@amandadr/lotide",
   "version": "1.0.0",
   "description": "my first library; curtosy of LHL instruction :)",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/amandadr/lotide.git"
   },
-  "author": "Amanda Roy",
+  "author": {"name": "Amanda Roy", 
+  "email": "amandadroy@gmail.com", 
+  "url": "https://github.com/amandadr"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amandadr/lotide/issues"
