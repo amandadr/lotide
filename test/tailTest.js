@@ -1,6 +1,11 @@
+const assert = require('chai').assert;
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
-const example1 = tail(["Hello", "Lighthouse", "Labs"]);
-const example2 = tail([1, 2, 3])
-assertEqual(example1, ["Lighthouse", "Labs"].toString());
-assertEqual(example2, '2,3');
+const eqArrays = require('../eqArrays');
+describe('#tail', () => {
+  it('returns [2, 3] for [1, 2, 3]', () => {
+    assert.isTrue(eqArrays(tail([1, 2, 3]), [2, 3]));
+  });
+  it('returns ["tall", "child"] for ["hello", "tall", "child"]', () => {
+    assert.isTrue(eqArrays(tail(["hello", "tall", "child"]), ["tall", "child"]));
+  });
+});

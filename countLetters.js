@@ -1,12 +1,3 @@
-function assertEqual(actual, expected) {
-  const passed = actual + ' === ' + expected;
-  const failed = actual + ' !== ' + expected;
-  if (actual === expected) {
-    console.log('✔✔✔Assertion Passed: ' + passed);
-  } else {
-    console.log('❌❌❌Assertion Failed: ' + failed);
-  }
-}
 const countLetters = function(message) {
   //create empty object for result:
   let result = {};
@@ -19,5 +10,9 @@ const countLetters = function(message) {
       result[letter] += 1;
     }
   }
-  return result;
+  function sum(obj) {
+    return Object.keys(obj).reduce((sum,key)=>sum + parseFloat(obj[key] || 0),0);
+  }
+  return sum(result);
 };
+module.exports = countLetters;

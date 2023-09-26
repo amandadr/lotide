@@ -6,4 +6,5 @@ const map = function(array, callback) {
   }
   //return: a new array based on the resuts of callback
   return results;
-}
+};
+module.exports = map;

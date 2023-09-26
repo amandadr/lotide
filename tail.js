@@ -1,5 +1,4 @@
-const assertEqual = require('./assertEqual');
-function tail(arr) {
-  return arr.slice(1).toString();
-}
+const tail = function(arr) {
+  return arr.slice(1);
+};
 module.exports = tail;

@@ -6,4 +6,5 @@ const takeUntil = function(array, callback) {
     result = array.slice(0, index);
   }
   return result;
-}
+};
+module.exports = takeUntil;
